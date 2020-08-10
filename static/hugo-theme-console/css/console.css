@@ -38,7 +38,7 @@
     --global-line-height: 1.6em;
     --page-width: 70em;
     --display-h1-decoration: 1;
-    --code-bg-color: #fff;
+    --code-bg-color: rgba(39, 40, 35, 1);
     --primary-color: rgba(116, 197, 244, 1);
     --font-color: rgba(240, 240, 236, 1);
     --secondary-font-color: rgba(163, 164, 165, 1);
