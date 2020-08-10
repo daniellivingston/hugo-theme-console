@@ -32,19 +32,21 @@
 
 :root {
     --global-font-size: 16px;
-    --global-font-color: #444;
+    --global-font-color: rgba(240, 240, 236, 1);
     --mono-font-stack: Roboto Mono, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     --font-stack: Roboto Mono, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     --global-line-height: 1.6em;
     --page-width: 70em;
     --display-h1-decoration: 1;
     --code-bg-color: #fff;
+    --primary-color: rgba(116, 197, 244, 1);
+    --font-color: rgba(240, 240, 236, 1);
+    --secondary-font-color: rgba(163, 164, 165, 1);
 }
 
 @media only screen and (max-width: 850px) {
     :root {
         --global-font-size: 14px;
-        --global-font-color: #444;
         --global-line-height: 1.6em;
         --page-width: 70em;
     }
@@ -73,7 +75,7 @@
 body {
     font-family: var(--font-stack);
     font-size: var(--global-font-size);
-    background-color: #fff;
+    background-color: rgba(40, 42, 53, 1);
     margin-bottom: 75px;
 }
 
@@ -95,6 +97,16 @@ h6,
 
 h1 {
     margin-bottom: 150px;
+    color: red;
+}
+
+.terminal h1 {
+    margin-bottom: 150px;
+    color: rgba(243, 245, 164, 1);
+}
+
+.post h1::after {
+    color: var(--primary-color);
 }
 
 .content-column-content p,
@@ -165,7 +177,7 @@ figure {
     margin-top: 100px;
     padding-top: 10px;;
     border-top: 1px solid var(--secondary-color);
-    color: var(--global-font-color);
+    color: var(--secondary-font-color);
 }
 
 .image-grid {
@@ -202,6 +214,7 @@ figure {
 
 .post h1 {
     padding-top: 0;
+    color: var(--global-font-color);
 }
 
 .posts-list .date {
@@ -211,8 +224,9 @@ figure {
     width: 150px;
     height: 100%;
     z-index: 400;
-    font-weight: bold;
+    font-weight: 100;
     padding-top: 3px;
+    color: var(--secondary-font-color);
 }
 
 @media only screen and (max-width: 850px) {
@@ -269,7 +283,7 @@ figure {
         width: 150px;
         height: 100%;
         z-index: 400;
-        font-weight: bold;
+        font-weight: 100;
         padding-top: 3px;
         display: none;
     }

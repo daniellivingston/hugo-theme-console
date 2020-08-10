@@ -13,7 +13,7 @@ https://mrmierzejewski.com
 ```sh
 $ mkdir themes
 $ cd themes
-$ git submodule add https://github.com/mrmierzejewski/hugo-theme-console.git hugo-theme-console
+$ git submodule add https://github.com/daniellivingston/hugo-theme-console.git hugo-theme-console
 ```
     
 See the [Hugo documentation](https://gohugo.io/themes/installing/) for more information.
